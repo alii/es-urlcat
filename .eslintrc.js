@@ -1,20 +1,15 @@
 module.exports = {
   env: {
-    'node': true
+    node: true,
   },
   root: true,
   parser: '@typescript-eslint/parser',
-  plugins: [
-    '@typescript-eslint',
-  ],
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-  ],
+  plugins: ['@typescript-eslint'],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
   rules: {
     'object-curly-spacing': ['error', 'always'],
     'array-bracket-spacing': ['error', 'never'],
-    'quotes': ['error', 'single'],
+    quotes: ['error', 'single'],
     'no-console': ['error'],
-  }
+  },
 };
